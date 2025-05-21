@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .normal-box{
+            background-color: aliceblue;
+            padding: 10px;
+            margin-bottom: 20px;
+          position: static;  
+        }
+        .container{
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        .static-box{
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            position: static;
+            z-index: 100;
+        }
+        .relative{
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            top: 15px;
+            left: 30px; 
+        }
+        .fixed{
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+            position: fixed;
+            bottom: 15px;
+            right: 15px; 
+        }
+        .absolute{
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+            position: absolute;
+            top: 15px;
+            right: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="normal-box">He nodded. “Some watches don’t just keep time—they hold memories. This one carries your father’s love for you.”
+
+Sophie’s eyes widened, and she whispered, “Can you make it work again?”
+
+Elias smiled. “I’ll do my best.”</div>
+<div class="static">this is static</div>
+<div class="relative">Relative</div>
+<div class="absolute">Absolute</div>
+<div class="fixed">Fixed</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Product</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Add New Product</h1>
+    <div class="row">
+      <div class="column">
+        <label>Product Name</label>
+        <input id="ProductName" type="text" />
+
+        <label>Product Code</label>
+        <input id="ProductCode" type="text" />
+
+        <label>Product Image</label>
+        <input id="ProductImg" type="text" />
+
+        <label>Product Unit Price</label>
+        <input id="UnitPrice" type="number" />
+
+        <label>Product Quantity</label>
+        <input id="Qty" type="number" />
+
+        <label>Product Total Price</label>
+        <input id="TotalPrice" type="number" />
+
+        <button onclick="addNewProduct()">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    async function addNewProduct() {
+      const ProductName = document.getElementById('ProductName').value.trim();
+      const ProductCode = document.getElementById('ProductCode').value.trim();
+      const ProductImg = document.getElementById('ProductImg').value.trim();
+      const UnitPrice = document.getElementById('UnitPrice').value;
+      const Qty = document.getElementById('Qty').value;
+      const TotalPrice = document.getElementById('TotalPrice').value;
+
+      if (!ProductName || !ProductCode || !UnitPrice || !Qty || !TotalPrice) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      const obj = {
+        ProductName,
+        ProductCode,
+        Img: ProductImg,
+        UnitPrice,
+        Qty,
+        TotalPrice
+      };
+
+      const URL = 'https://crud.teamrabbil.com/api/v1/CreateProduct';
+
+      try {
+        await axios.post(URL, obj);
+        window.location = "AJAX.html";
+      } catch (error) {
+        console.error("Error adding product:", error);
+        alert("Failed to add product. Please try again.");
+      }
+    }
+  </script>
+</body>
+</html>

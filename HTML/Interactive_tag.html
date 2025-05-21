@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Element</title>
+</head>
+<body>
+    <button type = "button" onclick =""></button>
+<br>
+     <details> <!--run kore triangle a clic korle kaj korbe-->
+        <summary> Diabetic prediction</summary>
+        <p>The paper discusses early prediction of diabetes is crucial for effective disease management and reduction of associated
+             health complications. This study used a publicly available diabetes dataset to build predictive models to identify 
+             individuals at risk of developing diabetes. The dataset includes key demographic, lifestyle, and medical factors that
+              influence the onset of diabetes. An extensive data preprocessing pipeline was applied, including handling missing values,
+               feature scaling, and outlier detection. Several machine learning algorithms, such as random forest and decision tree, 
+               were evaluated to determine the best model. Performance confusion  metrics, including precision, accuracy, recall, and 
+               F1-score, were used to evaluate the performance of the models. Our findings show that random forest achieved the highest
+                prediction accuracy of 0.9683%, highlighting the potential for reliable diabetes prediction.  This research underscores
+                 the utility of machine learning in healthcare and provides a foundation for developing decision-support systems to aid
+                  in early diagnosis and intervention in diabetes.</p>
+     </details>
+     <br>
+     <!--dialog ekta interactive element-->
+     <dialog></dialog>
+     <br>
+     <p>Progress:</p>
+     <progress value = "80" max = "100"></progress>
+     <label for = "volume"> Vloume:</label>
+     <input type = "range" id = "volume" name = "volume" min = "0" max = "100" value = "50"> <br><br>
+
+    <label for = "pet"> chose ans: </label>
+    <select id = "pet" name = "pet">
+        <option value = "dog">Dog</option>
+        <option value = "cat">cat</option>
+        <option value = "dreagon">dreagon</option>
+    </select>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<style> 
+/* Internal CSS 
+ctrl cepe ? caple comment hobe
+element selector */
+     h2{
+        color:blue;
+        background-color: antiquewhite;
+     }
+
+    p{
+       color:blue;
+      
+    }
+    /* class selctor */
+    .redtext{
+        color:red;
+        text-align: center;
+        font-size: 50px;
+    }
+    /* id selector */
+    #idselector{
+        color:brown;
+        text-align: right;
+    }
+    /* group selector */
+    article,span{
+        color:aqua;
+        font-size: 20px;
+        text-align: center;
+    }
+    .box{
+        height: 200px;
+        border: 2px solid red;
+        background-color:aquamarine;
+        /* background-image: url('./pngtree-new-cb-background-images-photos-pics-wallpaper-pictures-image_16123145.jpg'); */
+    }
+    .textcolor{
+        color: #C4D9FF;
+    }
+    .boxtwo{
+        height: 500px;
+        border: 2px solid blue;
+        margin: 30px;
+        /* background-image: url('./360_F_810607583_HPDXElwdpYZZPyJp9v0g7QCAJRDfRsBj.jpg');
+        background-repeat: repeat-x; */
+    }
+    .boxthree{
+        height: 500px;
+        border: 2px solid blue;
+        /* margin: 30px;
+        background-image: url('./360_F_810607583_HPDXElwdpYZZPyJp9v0g7QCAJRDfRsBj.jpg');
+        background-repeat: repeat-y;
+        background-position: center; */
+    }
+    .box1{
+        height: 200px;
+        width: 200px;
+        background-color: #B771E5;
+        border: 3px dashed green;
+        border-radius:50% ;
+        cursor: pointer;
+    }
+    .box2{
+        height: 200px;
+        width: 200px;
+        background-color: #C4D9FF;
+        border: 5px solid red;
+        cursor:crosshair;
+        
+    }
+    .box3{
+        height: 200px;
+        width: 300px;
+        background-color: #C5BAFF;
+        border: 6px dotted black;
+        border-radius:20px 40px 5px 35px ;
+        float: right; 
+    }
+    .box4{
+        height: 200px;
+        width: 200px;
+        background-color: #16404D;
+    }
+    .box4:hover{
+        background-color: bisque;
+        height: 300px;
+    }
+    .display{
+        display: none;
+    }
+    .inlineDisplay{
+        display: inline;
+    }
+    .height1{
+        height: 400px;
+    }
+    .height2{
+        height: 500px;
+    }
+    .height3{
+        height: 200px;
+    }
+    .banner{
+        height: 200px;
+    }
+    .mid{
+        height: 100px;
+    }
+</style>

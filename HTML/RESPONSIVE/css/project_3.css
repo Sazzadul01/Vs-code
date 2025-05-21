@@ -1,0 +1,63 @@
+body{
+    line-height: 1.6;
+}
+
+.hero-section{
+    background: url('../Asset/baground.jpg') no-repeat center center/cover;
+height: 100vh;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .bounce-text {
+    
+    display: inline-block;
+    animation: bounce 1s infinite;
+  }
+  
+  
+#Contact .Contact-info {
+    background: url('../Asset/contact.jpg') no-repeat center center/cover;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+}
+#Contact .Contact-info .text-center {
+background-color: rgba(0,0,0,0.6);
+padding: 20px;
+border-radius: 10px;
+}
+#Contact .Contact-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+#Contact .Contact-info p {
+    font-size: 1 rem;
+    margin-bottom: 1 rem;
+}
+#Contact .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid rgb(48, 166, 224);
+}
+#Contact .form-control:focus {
+    border-color: bisque;
+    box-shadow: 5px 5px 8px rgba(16, 23, 176, 0.2), -5px -5px 15px rgba(0, 25, 150, 0.2);
+
+}
+
+@media (max-width:768) {
+    #Contact .Contact-infob {
+        height: 300px;
+    }
+    #Contact .Contact-info .text-center {
+       padding: 15px;
+    }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Event</title>
+
+    <style>
+        .heading{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- click me te click korle salam alert dekhabe -->
+    <button onclick="saysalam()">Click Me!</button>
+    <!-- mouse wel come er upor nilei alert dekhabe -->
+    <h1 onmouseover="anssalam()">Wel come</h1>
+
+    <!-- kono kisu na likhe just output likhle dom create kore html a element a ekta output dekhay -->
+     <h2 id = "heading"> welcome</h2>
+     <button onclick="changeh2()">DOM</button>
+
+     <!-- class -->
+     <h3 class = "heading"> welcome class</h3>
+     <button onclick="changeh3()">DOMclass</button>
+
+     <h4 class = "heading"> welcome class</h4>
+     <button onclick="changeh4()">DOMclass-2</button>
+
+ <input type="text" name="roll">
+     <h5 class = "heading"> welcome class 55</h5>
+     <button onclick="changeh5()">DOMclass-3</button>
+
+     <h6 class ="heading" id ="h6">cookie</h6>
+     <button onclick="changeh6()">cookie</button> <br><hr>
+
+     <h7 class ="heading" id ="h7">Modify with js</h7>
+     <button onclick="changeh7()">click</button>
+
+     <h8 style ="display: none;" id ="treasure">Modify css with js</h8>
+     <button onclick="changeh8()">find me!</button>
+
+     <h9 style ="display: none;" id ="treasure">hidden</h9>
+     <button onclick="changeh9()">hide</button>
+
+     <h10 class="heading" id="h22">class change</h10>
+     <button onclick="changeh10()">hide-2</button> 
+     <hr>
+
+<form>
+    <!-- make calculator,  -->
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1">
+        <br><br>
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2">
+        <br><br>
+        <button type="button" onclick="showSum()">Show Sum</button>
+    </form>
+
+    <script>
+        function saysalam(){
+            alert("assalamualikum");
+        }
+        function anssalam(){
+            alert("walikumussalam");
+        }
+        function changeh2(){
+            const e1 = document.getElementById ("heading");
+            console.log(e1);
+            // change heading
+            e1.textContent = "hihihi";
+        }
+
+        function changeh3(){
+            const e2 = document.getElementsByClassName ("heading");
+            console.log(e2);
+        }
+        function changeh4(){
+            const e3 = document.getElementsByClassName ("heading");
+            console.log(e3);
+            for (let i = 0; i < e3.length; i++){
+                e3[i].textContent = "change!";
+            }
+        }
+
+        function changeh5(){
+            const e4 = document.getElementsByName ("roll");
+            console.log(e4);
+        }
+
+        function changeh6(){
+            const e5 = document.getElementById ("h6");
+            //e5.textContent= document.domain;
+            e5.textContent= document.lastModified;
+            //  e6.textContent= document.cookie;
+           // e5.textContent= document.title;
+           // document.open() // notun page open hobe
+           //document.write("<h6>haahahah</h6>")
+        }
+        function changeh7(){
+            const e6 = document.getElementById ("h7");
+            e6.innerHTML= '<p style ="color:red;">hello vhai</p>';
+        }
+
+        function changeh8(){
+            const treasure = document.getElementById ('treasure');
+            
+            treasure.style.display= "block";
+        }
+
+        function changeh9(){
+            const treasure = document.getElementById ('treasure');
+            
+            treasure.style.display= "none";
+        }
+        function changeh10(){
+            const treasure = document.getElementById ('h22');
+            treasure.classList.remove("heading");<br>
+          
+        }
+
+        // make calculator
+       function showSum() {
+        let num1 = document.getElementById('num1');
+        let num2 = document.getElementById('num2');
+
+            let num1Value = num1.value;
+            let num2Value = num2.value;
+
+            let sum = num1Value + num2Value;
+        console.log(sum);
+        }
+    </script>
+</body>
+</html>
+ 
